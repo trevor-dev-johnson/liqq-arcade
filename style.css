@@ -1,0 +1,68 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0b0b12;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#game {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #10122a 0%, #05060d 100%);
+}
+
+#ui {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  color: #f6f7ff;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#start-btn,
+#tilt-btn {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #0b0b12;
+  background: #f9c74f;
+  pointer-events: auto;
+}
+
+#tilt-btn {
+  background: #90be6d;
+  margin-left: 8px;
+}
+
+#message {
+  margin-top: 12px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
